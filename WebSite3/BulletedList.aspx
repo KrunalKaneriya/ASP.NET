@@ -42,6 +42,20 @@
                 </td>
             </tr>
 
+            <tr>
+                <td>Button Bulleted List</td>
+                <td>
+                    <asp:BulletedList ID = "BulletedList3" runat ="server" DisplayMode = "LinkButton">
+                        <asp:ListItem Value = "About.aspx">About.aspx</asp:ListItem>
+                    
+                    
+                        <asp:ListItem>Radio Button</asp:ListItem>
+                        <asp:ListItem>Image1</asp:ListItem>
+                    
+                    
+                    </asp:BulletedList>
+                </td>
+            </tr>
 
             </table>
     
