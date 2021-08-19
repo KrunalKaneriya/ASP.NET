@@ -9,10 +9,24 @@
         .style1
         {
             height: 26px;
+            width: 298px;
         }
         .style2
         {
             height: 23px;
+        }
+        .style4
+        {
+            width: 298px;
+        }
+        .style5
+        {
+            height: 36px;
+            width: 298px;
+        }
+        .style6
+        {
+            height: 35px;
         }
     </style>
 </head>
@@ -20,7 +34,7 @@
     <form id="form1" runat="server">
     <asp:Panel ID="PanelMain" runat="server">
         <asp:RadioButton ID="RadioOddEven" runat="server" AutoPostBack="True" 
-            GroupName="Radio" Text="Odd Even" Checked="True" />
+            GroupName="Radio" Text="Odd Even" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
@@ -44,20 +58,48 @@
         </tr>
 
         <tr>
-        <td><asp:Button ID="BtnOddEven" runat="server" Text="Odd/Even" /></td>
+        <td class="style4"><asp:Button ID="BtnOddEven" runat="server" Text="Odd/Even" /></td>
         </tr>
 
         <tr>
-        <td>Ans: </td>
-        <td>
+        <td class="style4">Ans:&nbsp;&nbsp;
             <asp:Label ID="LabelOddEven" runat="server" Text=""></asp:Label>
             </td>
+        <td>
+            &nbsp;</td>
         </tr>
 
     </table>
     </asp:Panel>
     <asp:Panel ID="PanelPositiveNegative" runat="server" 
         GroupingText="Positive Negative">
+        <table>
+
+        <tr>
+        <td class="style6">
+        Find Negative Or Positive Number
+        </td>
+        </tr>
+
+
+        <tr>
+        <td class="style5">
+        Enter Number: 
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </td>
+        </tr>
+
+
+        <tr>
+            <td class="style4">
+                <asp:Button ID="Button1" runat="server" Text="Check Number" /></td>
+        </tr>
+
+        <tr>
+            <td>Ans: 
+                <asp:Label ID="LabelPositiveNegative" runat="server" Text=""></asp:Label></td>
+        </tr>
+        </table>
     </asp:Panel>
     <asp:Panel ID="PanelSquare" runat="server" GroupingText="Square">
     </asp:Panel>
