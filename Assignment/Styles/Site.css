@@ -3,7 +3,7 @@
 
 body   
 {
-    background: #b6b7bc;
+    background: white;
     font-size: .80em;
     font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
     margin: 0px;
@@ -52,6 +52,7 @@ h1
     font-size: 1.6em;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    text-align:center;
 }
 
 h2
