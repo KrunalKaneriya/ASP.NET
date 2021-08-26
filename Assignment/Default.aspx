@@ -5,6 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Student Registration</title>
+    
+    <style type="text/css">
+        .style1 {
+            width: 44px;
+        }
+    </style>
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -41,11 +48,30 @@
                         <asp:TextBox ID="txtboxaddress" runat="server" TextMode="MultiLine"></asp:TextBox>
                     </td>
                 </tr>
+
+                <tr>
+                <td>
+                    Year:
+
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        </asp:DropDownList>
+                </td>
+                <td >
+                    
+                        
+                        &nbsp;&nbsp;Month:
+                        <asp:DropDownList ID="DropDownList2" runat="server">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
                 
                 <tr>
                     <td>
                         <asp:Label ID="lbldob" runat="server" Text="Date of Birth"></asp:Label>
                     </td>
+
+                 
+                    
                     <td class="style1">
                         <asp:Calendar ID="caldob" runat="server"></asp:Calendar>
                     </td>

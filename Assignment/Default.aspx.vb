@@ -7,7 +7,8 @@ Partial Class _Default
         lblenrollmentnumbersubmit.Text = txtboxenrollmentnumber.Text
         lblnamesubmit.Text = txtboxname.Text
         lbladdresssubmit.Text = txtboxaddress.Text
-        lbldobsubmit.Text = caldob.SelectedDate.ToString
+        lbldobsubmit.Text = caldob.SelectedDate.ToString("dd-MM-yyyy")
+
         lblgendersubmit.Text = rdbtngender.SelectedItem.ToString
         lblcontactnosubmit.Text = lblcontactno.Text
 
@@ -19,6 +20,10 @@ Partial Class _Default
             End If
 
         Next
+
+    End Sub
+
+    Protected Sub caldob_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles caldob.SelectionChanged
 
     End Sub
 End Class
