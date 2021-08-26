@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>AdImages/1.jpg</ImageUrl>
+		<NavigateUrl>http://www.google.com</NavigateUrl>
+		<AlternateText>Windows 11 Image</AlternateText>
+		<Keyword>OS</Keyword>
+		<Impressions>1</Impressions>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>AdImages/2.jpg</ImageUrl>
+		<NavigateUrl>http://www.yahoo.com</NavigateUrl>
+		<AlternateText>Windows 11 Image</AlternateText>
+		<Keyword>OS</Keyword>
+		<Impressions>1</Impressions>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>AdImages/3.jpg</ImageUrl>
+		<NavigateUrl>http://windows.microsoft.com</NavigateUrl>
+		<AlternateText>Windows 11</AlternateText>
+		<Keyword>OS</Keyword>
+		<Impressions>1</Impressions>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>AdImages/4.jpg</ImageUrl>
+		<NavigateUrl>http://facebook.com</NavigateUrl>
+		<AlternateText>Facebook</AlternateText>
+		<Keyword>OS</Keyword>
+		<Impressions>1</Impressions>
+	</Ad>
+	
+
+</Advertisements>
