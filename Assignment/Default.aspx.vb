@@ -1,4 +1,4 @@
-﻿
+﻿Imports System.Data
 Partial Class _Default
     Inherits System.Web.UI.Page
 
@@ -23,7 +23,51 @@ Partial Class _Default
 
     End Sub
 
-    Protected Sub caldob_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles caldob.SelectionChanged
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
+            LoadYears()
+            LoadMonths()
 
+        End If
+
+
+    End Sub
+
+    Private Sub LoadYears()
+        Dim dsyears As New DataSet
+        dsyears.ReadXml(Server.MapPath("~/Data/Year.xml"))
+
+        DropDownList1.DataTextField = "Number"
+        DropDownList1.DataValueField = "Number"
+
+        DropDownList1.DataSource = dsyears
+        DropDownList1.DataBind()
+    End Sub
+
+    Private Sub LoadMonths()
+        Dim dsMonths As New DataSet
+
+        dsMonths.ReadXml(Server.MapPath("~/Data/Month.xml"))
+        DropDownList2.DataTextField = "Name"
+        DropDownList2.DataValueField = "Number"
+        DropDownList2.DataSource = dsMonths
+
+        DropDownList2.DataBind()
+
+
+    End Sub
+
+    Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+        Dim year As Integer = Int16.Parse(DropDownList1.SelectedValue)
+        Dim month As Integer = Int16.Parse(DropDownList2.SelectedValue)
+        caldob.VisibleDate = New DateTime(year, month, 1)
+        caldob.SelectedDate = New DateTime(year, month, 1)
+    End Sub
+
+    Protected Sub DropDownList2_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList2.SelectedIndexChanged
+        Dim year As Integer = Int16.Parse(DropDownList2.SelectedValue)
+        Dim month As Integer = Int16.Parse(DropDownList2.SelectedValue)
+        caldob.VisibleDate = New DateTime(year, month, 1)
+        caldob.SelectedDate = New DateTime(year, month, 1)
     End Sub
 End Class

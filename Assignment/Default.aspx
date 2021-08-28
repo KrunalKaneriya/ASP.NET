@@ -53,14 +53,14 @@
                 <td>
                     Year:
 
-                    <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
                         </asp:DropDownList>
                 </td>
                 <td >
                     
                         
                         &nbsp;&nbsp;Month:
-                        <asp:DropDownList ID="DropDownList2" runat="server">
+                        <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True">
                         </asp:DropDownList>
                     </td>
                 </tr>
