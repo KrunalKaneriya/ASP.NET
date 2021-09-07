@@ -41,6 +41,9 @@
                 </td>
                 <td>
                     <asp:TextBox ID="txtage" runat="server"></asp:TextBox>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" 
+                        ControlToValidate="txtage" ErrorMessage="RangeValidator" MaximumValue="50" 
+                        MinimumValue="18" SetFocusOnError="True" Type="Integer">Enter Appropriate Age</asp:RangeValidator>
                 </td>
             </tr>
 
@@ -49,7 +52,12 @@
                 <td>
                     <asp:Label ID="Label4" runat="server" Text="Joining Date: "></asp:Label></td>
                 <td>
-                    <asp:TextBox ID="txtjoindate" runat="server"></asp:TextBox></td>
+                    <asp:TextBox ID="txtjoindate" runat="server"></asp:TextBox>
+                    <asp:RangeValidator ID="RangeValidator2" runat="server" 
+                        ControlToValidate="txtjoindate" ErrorMessage="Enter Appropriate Date" 
+                        MaximumValue="03-09-2021" MinimumValue="03-09-2021" SetFocusOnError="True" 
+                        Type="Date"></asp:RangeValidator>
+                </td>
             </tr>
 
 
