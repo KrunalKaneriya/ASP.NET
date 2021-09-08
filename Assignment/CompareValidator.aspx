@@ -36,9 +36,19 @@
             <tr><td>Confirm Password:<asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                 <asp:CompareValidator ID="CompareValidator1" runat="server" 
                     ControlToCompare="TextBox2" ControlToValidate="TextBox3" 
-                    ErrorMessage="Password Not Valid"></asp:CompareValidator>
+                    ErrorMessage="Password Not Valid" SetFocusOnError="True"></asp:CompareValidator>
                 </td></tr>
 
+
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" runat="server" Text="Submit" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="Button2" runat="server" Text="Clear" />
+                    </td>
+
+                    
+                </tr>
         </table>
     </div>
     </form>
