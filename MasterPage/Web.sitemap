@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="Home.aspx" title="Home"  description="Homepage">
+		<siteMapNode url="Aboutus.aspx" title="About Us"  description="About us Page" />
+
+		<siteMapNode url="Hardware.aspx" title="Hardware" description="Hardware Page">
+				<siteMapNode url="Monitor.aspx" title="Monitor"  description="Monitor Page" />
+				<siteMapNode url="Keyboard.aspx" title="Keyboard"  description="Keyboard Page" />
+		</siteMapNode>
+
+		<siteMapNode url="Software.aspx" title="Software" description="Hardware Page">
+			<siteMapNode url="appsoft.aspx" title="Application Software"  description="Application Software Page" />
+			<siteMapNode url="syssoft.aspx" title="System Software"  description="System Software Page" />
+		</siteMapNode>
+		
+		
+	</siteMapNode>
+	
+	
+		
+	
+</siteMap>
